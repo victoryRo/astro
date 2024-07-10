@@ -1,11 +1,11 @@
 ---------------------- Config vim go plugin -----------------------------------------------\\
 
--- vim.cmd [[
---    augroup NvimGo
---        autocmd!
---        autocmd User NvimGoLintPopupPost wincmd p
---    augroup END
--- ]]
+vim.cmd [[
+   augroup NvimGo
+       autocmd!
+       autocmd User NvimGoLintPopupPost wincmd p
+   augroup END
+]]
 
 ------------------------------------------------------------------------------------------\\
 -- disable some default providers when checkhealth

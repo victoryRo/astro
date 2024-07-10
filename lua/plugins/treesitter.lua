@@ -1,4 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- Customize Treesitter
 
@@ -7,9 +6,30 @@ return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
     ensure_installed = {
-      "lua",
+      "po",
+      "go",
       "vim",
-      -- add more arguments for adding more treesitter parsers
+      "lua",
+      "css",
+      "sql",
+      "vue",
+      "bash",
+      "html",
+      "json",
+      "scss",
+      "yaml",
+      "regex",
+      "jsdoc",
+      "gomod",
+      "gosum",
+      "gowork",
+      "markdown",
+      "gitcommit",
+      "gitignore",
+      "git_config",
+      "javascript",
+      "typescript",
+      "markdown_inline",
     },
   },
 }
