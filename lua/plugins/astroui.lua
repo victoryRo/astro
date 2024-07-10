@@ -10,8 +10,8 @@ return {
     -- change colorscheme
     -- colorscheme = "astrodark",
     -- colorscheme = "deus",
-    colorscheme = "nord",
-    -- colorscheme = "onedark",
+    -- colorscheme = "nord",
+    colorscheme = "onedark",
     -- colorscheme = "monokai-nightasty",
 
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
