@@ -26,7 +26,7 @@ return {
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
-        signcolumn = "yes", -- sets vim.opt.signcolumn to auto
+        signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = false, -- sets vim.opt.wrap
         shiftwidth = 4, -- number of space inserted for indentation
         showtabline = 4, -- always display tabline
@@ -34,6 +34,7 @@ return {
         updatetime = 100,
         cursorline = false,
         background = "dark",
+        -- background = "light",
       },
 
       g = {},

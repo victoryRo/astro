@@ -7,41 +7,50 @@ return {
   -- ================================ Adding Themes =================================
   --NOTE: description themes
 
-  { "ajmwagar/vim-deus" },
+  { "relastle/bluewery.vim" },
+  { "rmehri01/onenord.nvim" },
+  { "Mofiqul/vscode.nvim" },
+  { "cpea2506/one_monokai.nvim" },
+  { "sainnhe/everforest" },
+
+    {
+    "glepnir/zephyr-nvim",
+    dependencies = { "nvim-treesitter/nvim-treesitter" }
+  },
 
   {
-    "polirritmico/monokai-nightasty.nvim",
+    "uloco/bluloco.nvim",
+    lazy = false,
+    priority = 1000,
+    dependencies = { 'rktjmp/lush.nvim' },
+    config = function()
+      require("bluloco").setup({
+        style = "auto",               -- "auto" | "dark" | "light"
+      })
+    end,
+  },
+
+  {
+    "xero/miasma.nvim",
     lazy = false,
     priority = 1000,
   },
 
   {
-    "navarasu/onedark.nvim",
-    priority = 1000, -- Ensure it loads first
+    "Shatur/neovim-ayu",
     config = function()
-      require('onedark').setup {
-        style = 'dark', -- warmer dark
-        code_style = {
-          comments = 'italic',
-          keywords = 'bold',
-          functions = 'none',
-          strings = 'italic',
-          variables = 'none'
-        },
-      }
+      require('ayu').setup({
+        mirage = false,
+        terminal = true,
+        overrides = {},
+      })
     end,
   },
 
   {
-    "shaunsingh/nord.nvim",
-    config = function()
-      vim.g.nord_contrast = true
-      vim.g.nord_borders = true
-      vim.g.nord_disable_background = false
-      vim.g.nord_italic = true
-      vim.g.nord_uniform_diff_background = true
-      vim.g.nord_bold = true
-    end
+    "polirritmico/monokai-nightasty.nvim",
+    lazy = false,
+    priority = 1000,
   },
 
   -- ================================ Adding Plugins ================================
