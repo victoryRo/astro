@@ -7,56 +7,54 @@ return {
   -- ================================ Adding Themes =================================
   --NOTE: description themes
 
-  { "relastle/bluewery.vim" },
-  { "rmehri01/onenord.nvim" },
-  { "Mofiqul/vscode.nvim" },
-  { "cpea2506/one_monokai.nvim" },
-  { "sainnhe/everforest" },
+  { "cocopon/iceberg.vim" },
+  { 'projekt0n/github-nvim-theme' },
 
-    {
-    "glepnir/zephyr-nvim",
-    dependencies = { "nvim-treesitter/nvim-treesitter" }
+  {
+    'AlexvZyl/nordic.nvim',
+    priority = 1000,
   },
 
   {
-    "uloco/bluloco.nvim",
+    "shaunsingh/nord.nvim",
     lazy = false,
     priority = 1000,
-    dependencies = { 'rktjmp/lush.nvim' },
     config = function()
-      require("bluloco").setup({
-        style = "auto",               -- "auto" | "dark" | "light"
-      })
+      vim.g.nord_contrast = true
+      vim.g.nord_borders = true
+      vim.g.nord_disable_background = false
+      vim.g.nord_italic = false
+      vim.g.nord_uniform_diff_background = true
+      vim.g.nord_bold = true
     end,
   },
 
   {
-    "xero/miasma.nvim",
-    lazy = false,
+    "catppuccin/nvim",
+    name = "catppuccin",
     priority = 1000,
-  },
-
-  {
-    "Shatur/neovim-ayu",
     config = function()
-      require('ayu').setup({
-        mirage = false,
-        terminal = true,
-        overrides = {},
+      require("catppuccin").setup({
+        background = { -- :h background
+          light = "latte",
+          dark = "frappe",
+        },
+        transparent_background = false, -- disables setting the background color.
       })
     end,
-  },
-
-  {
-    "polirritmico/monokai-nightasty.nvim",
-    lazy = false,
-    priority = 1000,
   },
 
   -- ================================ Adding Plugins ================================
 
   ---- presence
   "andweeb/presence.nvim",
+
+  -- {
+  --   "xiyaowong/transparent.nvim",
+  --   event = "User AstroFile",
+  --   cmd = { "TransparentEnable", "TransparentDisable", "TransparentToggle" },
+  --
+  -- },
 
     ---- color brackets
   { "HiPhish/rainbow-delimiters.nvim" },
@@ -69,11 +67,11 @@ return {
   },
 
   ---- live server
-  {
-    "barrett-ruth/live-server.nvim",
-    config = function() require("live-server").setup() end,
-    cmd = { "LiveServerStart", "LiveServerStop" },
-  },
+  -- {
+  --   "barrett-ruth/live-server.nvim",
+  --   config = function() require("live-server").setup() end,
+  --   cmd = { "LiveServerStart", "LiveServerStop" },
+  -- },
 
   ---- minimap ...
   {

@@ -8,16 +8,13 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    -- colorscheme = "bluewery",
-    -- colorscheme = "zephyr",
-    -- colorscheme = "everforest",
-    colorscheme = "one_monokai",
-    -- colorscheme = "ayu",
-    -- colorscheme = "miasma",
-    -- colorscheme = "onenord",
-    -- colorscheme = "vscode",
+    -- colorscheme = "nordic",
+    -- colorscheme = "nord",
+    -- colorscheme = "catppuccin",
+    -- colorscheme = "iceberg",
+    colorscheme = "github_dark",
+    -- colorscheme = "github_light",
     -- colorscheme = "astrodark",
-    -- colorscheme = "monokai-nightasty",
 
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
